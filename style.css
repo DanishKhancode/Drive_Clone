@@ -1,0 +1,343 @@
+body{
+    background-color: linen;
+}
+
+#header{
+    
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#header button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#header button:hover {
+    transform: scale(1.05);
+    background-color: lightyellow;
+}
+
+#breadcrumb{
+  
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    font-size: 30px;
+}
+
+
+#breadcrumb a {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    padding: 10px;
+    cursor: pointer;
+    /* border-right: 5px solid black; */
+}
+
+#breadcrumb a:hover {
+    background-color: lemonchiffon;
+    text-decoration: underline;
+}
+
+#container{
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.folder {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+    background-color: lightsalmon;
+    color:black;
+    height: 120px;
+    width: 150px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+
+.folder div[purpose=name]{
+    margin-top: 80px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder [action]:hover {
+    color: blue;
+    transform: scale(2);
+}
+
+
+.text-file {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+    background-color: yellow;
+    color:black;
+    height: 120px;
+    width: 150px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.text-file div[purpose=name]{
+    margin-top: 80px;
+}
+
+.text-file [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-file [action]:hover {
+    color: blue;
+    transform: scale(2);
+}
+
+.album {
+    background-color: lightcyan;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+    color:black;
+    height: 120px;
+    width: 150px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.album div[purpose=name]{
+    margin-top: 80px;
+}
+
+.album [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.album [action]:hover {
+    color: blue;
+    transform: scale(2);
+}
+
+#app{
+    border: px solid black;
+    margin: 10px;
+}
+
+#app-title-bar {
+    display: flex;
+    /* background-color: cyan; */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+    height: 40px;
+}
+
+#app-title {
+    width: 92%;
+    text-align: center;
+    font-size: 30px;
+    /* border-right: 5px solid red; */
+}
+
+#app-menu-bar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 2px solid black;
+    display: flex;
+    /* background-color: teal; */
+    height: 40px;
+}
+
+#app-body {
+    display: flex;
+    background-color:lightgoldenrodyellow;
+    height: 500px;
+}
+
+.notepad-menu{
+     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  
+    /* background-color: beige; */
+    width: 100%;
+    padding: 5px;
+}
+
+.notepad-menu * {
+    margin: 1px 10px;
+    padding: 2px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.notepad-menu span {
+    vertical-align: bottom;
+    
+}
+
+.notepad-menu span:hover {
+    border: 2px solid black;
+    background-color: lightcoral;
+    color: teal;
+}
+
+
+.notepad-menu [pressed=true] {
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+}
+
+.notepad-menu input[type=color] {
+    width: 30px;
+}
+
+.notepad-menu select {
+    height: 30px;
+}
+
+.notepad-body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.notepad-body textarea{
+
+    height: 100%;
+    width: 100%;
+}
+
+[purpose=download]{
+    display: none;
+}
+
+/* input[action=upload]{
+    display: none;
+} */
+
+#win-actions span {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#win-actions span:hover {
+    color: blue;
+}
+
+.notepad-menu input[action=upload]{
+    display: none;
+}
+
+.album-menu{
+    width: 100%;
+    padding: 5px;
+}
+
+.album-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.album-menu span {
+    vertical-align: bottom;
+    
+}
+
+.album-menu span:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+}
+
+.album-body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.picture-list {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    /* border: 1px solid black; */
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-list img {
+    height: 95%;
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.picture-list img:hover {
+    transform: scale(1.1);
+    border: 2px solid hsl(66, 87%, 9%);
+}
+
+.picture-list img[pressed=true]{
+    transform: scale(1.02);
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px red;
+}
+
+.picture-view {
+    /* border: 1px solid black; */
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+   
+}
+
+.picture-view > div {
+    height: 100%;
+}
+
+.picture-view .move-left {
+    width: 15%;
+}
+
+.picture-view .picture-main {
+    padding: 5px;
+    width: 70%;
+    display: flex;
+}
+
+.picture-view .picture-main img {
+    height: 100%;
+}
+
+/* .picture-view .move-right {
+    width: 15%;
+} */
